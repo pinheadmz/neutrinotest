@@ -1,0 +1,16 @@
+{
+  "name": "neutrinotest",
+  "version": "0.0.0",
+  "description": "Compare bcoin and btcd BIP158 filters",
+  "main": "test.js",
+  "dependencies": {
+    "bcoin": "github:tuxcanfly/bcoin#gcs-index",
+    "bcurl": "github:pinheadmz/bcurl#brq-strict"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Matthew Zipkin",
+  "license": "MIT"
+}
