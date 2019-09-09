@@ -4,7 +4,7 @@
   "description": "Compare bcoin and btcd BIP158 filters",
   "main": "test.js",
   "dependencies": {
-    "bcoin": "github:tuxcanfly/bcoin#gcs-index",
+    "bcoin": "github:tuxcanfly/bcoin#indexer-filter",
     "bcurl": "github:pinheadmz/bcurl#brq-strict"
   },
   "devDependencies": {},
