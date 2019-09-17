@@ -5,7 +5,7 @@
   "main": "test.js",
   "dependencies": {
     "bcoin": "github:tuxcanfly/bcoin#indexer-filter",
-    "bcurl": "github:pinheadmz/bcurl#brq-strict"
+    "bcurl": "^0.1.6"
   },
   "devDependencies": {},
   "scripts": {

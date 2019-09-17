@@ -21,7 +21,7 @@ const nodeClient = new client.NodeClient({
   // Miner primary/default then evenly disperses
   // all funds to other wallet accounts
 
-  const numTxBlocks = 20; // How many blocks to randomly fill with txs
+  const numTxBlocks = 100; // How many blocks to randomly fill with txs
   const numTxPerBlock = 10; // How many txs to try to put in each block
   // (due to the random tx-generation, some txs will fail due to lack of funds)
 
