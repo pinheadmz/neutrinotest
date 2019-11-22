@@ -1,15 +1,14 @@
 'use strict';
 
 const bcoin = require('bcoin');
-const client = require('bclient');
 const network = bcoin.Network.get(process.env.BCOIN_NETWORK);
 
-const walletClient = new client.WalletClient({
+const walletClient = new bcoin.WalletClient({
   port: network.walletPort,
   apiKey: process.env.BCOIN_WALLET_API_KEY
 });
 
-const nodeClient = new client.NodeClient({
+const nodeClient = new bcoin.NodeClient({
   port: network.rpcPort,
   apiKey: process.env.BCOIN_API_KEY
 });
@@ -21,8 +20,8 @@ const nodeClient = new client.NodeClient({
   // Miner primary/default then evenly disperses
   // all funds to other wallet accounts
 
-  const numTxBlocks = 100; // How many blocks to randomly fill with txs
-  const numTxPerBlock = 10; // How many txs to try to put in each block
+  const numTxBlocks = 200; // How many blocks to randomly fill with txs
+  const numTxPerBlock = 50; // How many txs to try to put in each block
   // (due to the random tx-generation, some txs will fail due to lack of funds)
 
   const maxOutputsPerTx = 4; // Each tx will have a random # of outputs
